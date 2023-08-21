@@ -10,5 +10,7 @@ porcentagem_gorjeta = gorjeta / 100
 n_pessoas = int(input("Qunatas pessoas vão dividir a conta?"))
 # Realizando o cálculo para decidir quanto cada um vai pagar
 valor_total = (conta / n_pessoas) * (1 + porcentagem_gorjeta)
+# Formatando a variável para mostrar valores terminados em zero
+valor_total = "{:.2f}".format(valor_total)
 # Informando o usuário
-print(f"Cada pessoa deve pagar: {valor_total}")
+print(f"Cada pessoa deve pagar: R${valor_total}")
